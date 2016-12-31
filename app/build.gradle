@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
     defaultConfig {
-        applicationId "tsyki.java_conf.gr.jp.mymemoapp"
+        applicationId "jp.gr.java_conf.tsyki.mymemoapp"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1

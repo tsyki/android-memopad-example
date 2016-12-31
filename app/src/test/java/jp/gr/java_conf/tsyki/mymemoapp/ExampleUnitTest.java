@@ -1,4 +1,4 @@
-package tsyki.java_conf.gr.jp.mymemoapp;
+package jp.gr.java_conf.tsyki.mymemoapp;
 
 import org.junit.Test;
 

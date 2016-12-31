@@ -1,4 +1,4 @@
-package tsyki.java_conf.gr.jp.mymemoapp;
+package jp.gr.java_conf.tsyki.mymemoapp;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -7,7 +7,7 @@ import android.net.Uri;
 import android.support.annotation.Nullable;
 
 public class MemoProvider  extends ContentProvider{
-    private static final String AUTHORITY = "tsyki.java_conf.gr.jp.mymemoapp.memo";
+    private static final String AUTHORITY = "jp.gr.java_conf.tsyki.mymemoapp.memo";
     private static final String CONTENT_PATH  = "files";
 
     public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + CONTENT_PATH);

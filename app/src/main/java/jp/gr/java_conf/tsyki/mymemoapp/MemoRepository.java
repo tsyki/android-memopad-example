@@ -1,4 +1,4 @@
-package tsyki.java_conf.gr.jp.mymemoapp;
+package jp.gr.java_conf.tsyki.mymemoapp;
 
 import android.content.ContentValues;
 import android.content.Context;

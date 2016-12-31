@@ -1,4 +1,4 @@
-package tsyki.java_conf.gr.jp.mymemoapp;
+package jp.gr.java_conf.tsyki.mymemoapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("tsyki.java_conf.gr.jp.mymemoapp", appContext.getPackageName());
+        assertEquals("jp.gr.java_conf.tsyki.mymemoapp", appContext.getPackageName());
     }
 }
