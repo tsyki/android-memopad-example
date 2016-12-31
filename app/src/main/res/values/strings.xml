@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyMemoApp</string>
+    <string name="permission_memo_read_description">作成したメモの情報を読み取ります</string>
+    <string name="permission_memo_write_description">作成したメモの情報を書き込みます</string>
 </resources>

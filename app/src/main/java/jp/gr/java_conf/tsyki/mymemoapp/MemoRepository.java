@@ -18,6 +18,10 @@ public class MemoRepository {
      */
     private static final String MEMO_FILE_FORMAT = "%1$s-%2$tF-%2$tH-%2$tM-%2$tS.txt";
 
+    private MemoRepository(){
+
+    }
+
     public static Uri store(Context context, String memo){
         File outputDir;
         if(Build.VERSION.SDK_INT >= 19){

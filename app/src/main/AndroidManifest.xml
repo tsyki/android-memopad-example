@@ -3,7 +3,16 @@
     package="jp.gr.java_conf.tsyki.mymemoapp">
     
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    
+
+    <permission android:name="jp.gr.java_conf.tsyki.mymemoapp.memo.read" android:protectionLevel="normal"
+         android:label="メモ情報の読み取り" android:description="@string/permission_memo_read_description"/>
+    <!-- XXX なんでこっちはsignature？ -->
+    <permission android:name="jp.gr.java_conf.tsyki.mymemoapp.memo.write" android:protectionLevel="signature"
+        android:label="メモ情報の書き込み" android:description="@string/permission_memo_write_description"/>
+
+    <uses-permission android:name="jp.gr.java_conf.tsyki.mymemoapp.memo.read"/>
+    <uses-permission android:name="jp.gr.java_conf.tsyki.mymemoapp.memo.write"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:authorities="jp.gr.java_conf.tsyki.mymemoapp.memo"
+            android:name=".MemoProvider"
+            android:writePermission="jp.gr.java_conf.tsyki.mymemoapp.memo.write"
+            android:readPermission="jp.gr.java_conf.tsyki.mymemoapp.memo.read"
+            android:exported="true"/>
     </application>
 
 </manifest>
